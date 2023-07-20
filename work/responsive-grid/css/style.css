@@ -1,0 +1,135 @@
+body {
+    min-width: 400px;
+}
+
+.Header__bar {
+    background-color: lightskyblue;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+}
+
+.Header__bar__logo {
+    width: auto;
+    height: auto;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.Header__bar__description {
+    margin: auto auto;
+    text-align: center;
+    
+}
+
+
+.Header__menu {
+    background-color: lightskyblue;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.Header__menu li a:hover {
+    color: red;
+}
+
+.Main__description {
+    background-color: lightseagreen;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 2.5rem;
+    margin-bottom: 0px;
+}
+
+.Main__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.Card {
+    margin: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(132, 220, 237);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    grid-column: 1 span;
+    
+}
+
+.Card:hover {
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+
+.Card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.Card__link {
+    background-color: lightcoral;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.Card__link:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.Footer__menu {
+    background-color: lightskyblue;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.Footer__menu li {
+    grid-column: span;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.Footer__menu li a:hover {
+    color: red;
+}
+
+@media only screen and (min-width: 50rem) {
+    body {
+        background-color: lightgray;
+    }
+
+    .Header__menu {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .Main__cards {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .Card {
+        grid-column: 6 span;
+    }
+
+    .Footer__menu {
+        grid-template-columns: repeat(12, 1fr);
+    }
+    .Footer__menu li{
+        grid-column: 4 span;
+    }
+}

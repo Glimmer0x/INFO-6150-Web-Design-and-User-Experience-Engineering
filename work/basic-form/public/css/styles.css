@@ -1,0 +1,79 @@
+body {
+    min-width: 360px;
+    max-width: 1000px;
+}
+
+.Form__fieldset {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+.Fieldset__legend {
+    margin: 10px;
+}
+
+.Fieldset__name {
+    margin: 10px;
+}
+
+.Fieldset__email {
+    margin: 10px;
+}
+
+.Fieldset__checkbox {
+    margin: 10px;
+}
+
+.Fieldset__select {
+    margin: 10px;
+}
+
+.Fieldset__button {
+    margin: 10px;
+}
+
+footer {
+    margin: 10px;
+    text-align: center;
+}
+
+.Fieldset__note{
+    margin: 10px;
+    text-align: center;
+    border: solid 1px;
+}
+
+@media only screen and (min-width: 50rem) {
+    .Form__fieldset {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .Fieldset__note {
+        grid-column: 2 span;
+    }
+
+    .Fieldset__legend {
+        grid-column: 2 span;
+    }
+    
+    .Fieldset__name {
+        grid-column: 1 span;
+    }
+
+    .Fieldset__email {
+        grid-column: 1 span;
+    }
+
+    .Fieldset__checkbox {
+        grid-column: 1 span;
+    }
+
+    .Fieldset__select {
+        grid-column: 1 span;
+    }
+
+    .Fieldset__button {
+        grid-column: 2 span;
+    }
+}

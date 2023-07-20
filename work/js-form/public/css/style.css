@@ -1,0 +1,68 @@
+body {
+    margin: 0px;
+}
+.header, .footer {
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin: 0px;
+}
+
+.form__fieldset {
+    display: grid;
+    grid-template-columns: (6, 1fr);
+}
+
+.fieldset__field {
+    margin: 10px;
+    grid-column: 6 span;
+}
+
+.fieldset__note {
+    margin: 10px;
+    text-align: center;
+    border: solid 1px;
+}
+
+.field__alter {
+    display: flex;
+    flex-direction: column;
+}
+
+.field__name__error{
+    font-size: 80%;
+    color: red;
+    display: none;
+}
+
+.field__email__error,
+.field__confirm-email__error {
+    font-size: 80%;
+    color: red;
+}
+.field__email__error:empty {
+    display: none;
+}
+
+.field__confirm-email__error:empty {
+    display: none;
+}
+
+.field__name__error--invalid {
+    display: initial;
+}
+
+.invalid {
+    border: 1px solid red;
+}
+
+@media screen and (min-width: 40rem) {
+    .form__fieldset {
+        grid-template-columns: (12, 1fr);
+    }
+    .fieldset__note {
+        grid-column: 12 span;
+    }
+}
+    

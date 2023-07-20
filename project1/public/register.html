@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Register</title>
+</head>
+
+<body>
+    <header>
+        <div class="Header__bar">
+            <a href="index.html">
+                <img class="Header__bar__logo" src="images/cat01.jpg" alt="">
+            </a>
+            <h1 class="Header__bar__description">Cats on the Internet</h1>
+        </div>
+        <h2 class="Header__title">Register</h2>
+        <nav class="Header__menubar">
+            <ul class="Header__menu">
+                <li>
+                    Menu
+                    <ul class="Header__menu__submenu">
+                        <li><a href="index.html">Homepage</a></li>
+                        <li><a href="register.html">Register Yourself</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </li>
+    
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <form action="/register" method="POST">
+                <fieldset class="Form__fieldset">
+                    <legend class="Fieldset__legend">Registration Form</legend>
+                    <a class="Fieldset__note">Note: terms with "*" are required while others are optional.</a>
+            
+                    <label class="Fieldset__name" for="name">*Name (used to represent yourself):</label>
+                    <input class="Fieldset__name" type="text" id="name" name="name" placeholder="Gavin Belson" required>
+            
+                    <label class="Fieldset__email" for="email">*Email (used to communicate with others):</label>
+                    <input class="Fieldset__email" type="email" id="email" name="email" placeholder="gavin@hooli.com" required>
+            
+                    <label class="Fieldset__select" for="tier">
+                        *Tier (how much favour your have for cats):
+                    </label>
+                    <select class="Fieldset__select" name="tier" id="tier" required>
+                        <option value="">Please select</option>
+                        <option value="1">Silver Tier (simple love)</option>
+                        <option value="2">Gold Tier (really love)</option>
+                        <option value="3">Platinum Tier (extremely love)</option>
+                    </select>
+            
+                    <label class="Fieldset__checkbox" for="annoy_me">
+                        <input type="checkbox" id="annoy_me" name="annoy_me" checked>
+                        Do you want us to send you annoying emails?
+                    </label>
+            
+            
+                    <input class="Fieldset__button" type="submit" value="Register">
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <b><i>
+                We are not care about your privacy, please check our <a href="privacy.html" style="color: red;">Privacy
+                    Policy</a>
+            </i></b>
+    </footer>
+
+</body>
+
+</html>

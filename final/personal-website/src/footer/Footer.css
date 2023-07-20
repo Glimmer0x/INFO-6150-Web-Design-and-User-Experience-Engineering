@@ -1,0 +1,11 @@
+.footer-bar {
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+
+    padding: 5px;
+
+    border-top: solid;
+    border-color: #DC052D;
+    border-width: 4px;
+}

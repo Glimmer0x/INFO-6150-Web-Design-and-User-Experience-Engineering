@@ -1,0 +1,73 @@
+.accordion {
+    background-color: #DC052D;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    border-top: solid;
+    border-color: darkred;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-open {
+    background-color: inherit;
+    border: none;
+    font-size: large;
+}
+
+.active,
+.accordion:hover {
+    background-color: darkred;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: inherit;
+    border: solid;
+    border-top: none ;
+    border-color: #DC052D;
+}
+
+.panel-hidden {
+    display: none;
+    overflow: hidden;
+}
+
+.panel-display {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.panel-header {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.panel-item-left{
+    text-align: left;
+}
+
+.panel-item-right {
+    text-align: right;
+}
+
+.panel-item-bottom{
+    margin-top: 20px;
+    text-align: left;
+}
+.panel-item-bottom ul{
+    margin-top: 10px;
+}
+
+.education-list{
+    padding: 0 20px 0 20px;
+}

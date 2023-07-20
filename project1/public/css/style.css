@@ -1,0 +1,251 @@
+:root {
+    min-width: 360px;
+    max-width: 1000px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #DDEEEF;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.Header__bar {
+    background-color: #3B3B3B;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.Header__bar__logo {
+    width: auto;
+    height: auto;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.Header__bar__description {
+    margin: auto auto;
+    text-align: center;
+
+}
+
+.Header__title {
+    text-align: center;
+    background-color: #6A6A6A;
+    color: #FFFFFF;
+    padding: 10px 0px 10px 0px;
+    margin: 1px 0px 0px 0px;
+}
+
+.Header__menu {
+    background-color: #9CC1B4;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    margin: 1px 0px 0px 0px;
+}
+
+.Header__menu li:hover ul,
+.Header__menu li:focus-within ul{
+    max-height: initial;
+    padding: 5px 0px 5px 0px;
+    margin: 0px;
+}
+
+.Header__menu__submenu {
+    position: relative;
+    background-color: #3862a0;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden; 
+}
+
+.Header__menu__submenu li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.Header__menu__submenu li a:hover {
+    text-decoration: underline;
+}
+
+.Main__description {
+    background-color: lightseagreen;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 2.5rem;
+    margin-bottom: 0px;
+}
+
+.Main__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.Card {
+    margin: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(132, 220, 237);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    grid-column: 1 span;
+
+}
+
+.Card:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.Card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.Card__link {
+    background-color: gainsboro;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.Card__link:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+form {
+    padding: 20px;
+}
+
+.Form__fieldset {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+.Fieldset__legend {
+    margin: 10px;
+}
+
+.Fieldset__name {
+    margin: 10px;
+}
+
+.Fieldset__email {
+    margin: 10px;
+}
+
+.Fieldset__checkbox {
+    margin: 10px;
+}
+
+.Fieldset__select {
+    margin: 10px;
+}
+
+.Fieldset__button {
+    margin: 10px;
+}
+
+footer {
+    margin: 10px 0px 0px 0px;
+    padding: 20px;
+    text-align: center;
+    background-color: #3B3B3B;
+    color: #FFFFFF;
+}
+
+.Fieldset__note {
+    margin: 10px;
+    text-align: center;
+    border: solid 1px;
+}
+
+.Main__paragraphs {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.Main__paragraphs p {
+    grid-column: 1 span;
+    padding: 10px;
+    text-align: left;
+}
+
+
+@media only screen and (min-width: 50rem) {
+    .Header__menu__submenu {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .Main__cards {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .Card {
+        grid-column: 6 span;
+    }
+
+    .Form__fieldset {
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .Fieldset__note {
+        grid-column: 12 span;
+    }
+
+    .Fieldset__legend {
+        grid-column: 12 span;
+    }
+
+    .Fieldset__name {
+        grid-column: 6 span;
+    }
+
+    .Fieldset__email {
+        grid-column: 6 span;
+    }
+
+    .Fieldset__checkbox {
+        grid-column: 6 span;
+    }
+
+    .Fieldset__select {
+        grid-column: 6 span;
+    }
+
+    .Fieldset__button {
+        grid-column: 12 span;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .Header__menu__submenu {
+        transition: none;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .Header__menu__submenu {
+        /* `vibrate` keyframes are defined elsewhere */
+        transition: 0.3s ease-in-out;
+    }
+}

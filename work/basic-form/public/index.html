@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Basic Form</title>
+</head>
+<body>
+    <div>
+        <header>
+            <h1>Registration</h1>
+        </header>
+        <main>
+            <form action="/submit" method="POST">
+                <fieldset class="Form__fieldset">
+                <legend class="Fieldset__legend">Registration Form</legend>
+                <a class="Fieldset__note">Note: terms with "*" are required while others are optional.</a>
+                
+                <label class="Fieldset__name" for="name">*Name:</label>
+                <input class="Fieldset__name" type="text" id="name" name="name" placeholder="Gavin Belson" required>
+                
+                <label class="Fieldset__email" for="email">*Email:</label>
+                <input class="Fieldset__email" type="email" id="email" name="email" placeholder="gavin@hooli.com" required>
+                
+                <label  class="Fieldset__select" for="tier">
+                    *Tier:
+                </label>
+                <select class="Fieldset__select" name="tier" id="tier" required>
+                    <option value="">Please select</option>
+                    <option value="1">Silver Tier</option>
+                    <option value="2">Gold Tier</option>
+                    <option value="3">Platinum Tier</option>
+                </select>
+
+                <label class="Fieldset__checkbox" for="annoy_me">
+                    <input type="checkbox" id="annoy_me" name="annoy_me" checked>
+                    Do you want us to send you annoying emails?
+                </label>
+
+            
+                <input class="Fieldset__button" type="submit" value="Register">
+                </fieldset>
+
+                
+                
+            </form>
+        </main>
+        <footer>
+            <b><i>
+                We are not care about your privacy, please check our <a href="privacy.html">Privacy Policy</a>
+            </i></b>
+        </footer>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,154 @@
+.sign-wrap {
+    padding: 10px;
+    border: solid;
+    border-color: grey;
+    border-radius: 5px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-input-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sign-select {
+    border: none;
+    border-bottom: solid;
+    text-align: center;
+    width: 100px;
+    height: 21.5px;
+    margin-right: 10px;
+    background-color: inherit;
+
+    font-size: large;
+}
+
+.sign-select:focus {
+    outline: none;
+    border-width: 3px;
+}
+
+.sign-input {
+    border: none;
+    border-bottom: solid ;
+    text-align: center;
+    height: 20px;
+    width: 110px;
+    padding: 0;
+    background-color: inherit;
+
+    font-size: large;
+}
+
+.sign-input:focus{
+    outline: none;
+    border-width: 3px;
+}
+
+.sign-button {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: none;
+    background-color: crimson;
+}
+
+.sign-button-wrap {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.button-line-wrap{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    height: 70px;
+    width: calc(50% - 35px);
+}
+
+.button-line{
+    height: 45px;
+    border-bottom: solid;
+    border-color: crimson;
+    border-width: 4px;
+    
+}
+
+.button-line-left {
+    margin-right: 5px;
+}
+
+.button-line-right {
+    margin-left: 5px;
+}
+
+.button-line-indent {
+    height: 45px;
+}
+
+.introduction-wrap {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.letter-wrap {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 700px;
+}
+
+.letter-header{
+    text-align: left;
+}
+
+.letter-body{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    text-indent: 25px;
+}
+
+.letter-tail{
+    text-align: right;
+}
+
+@media only screen and (max-width: 500px){
+    .sign-input-wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sign-input{
+        margin-top: 10px;
+    }
+    
+}

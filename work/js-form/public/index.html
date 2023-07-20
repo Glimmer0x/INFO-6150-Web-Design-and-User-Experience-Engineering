@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+    <title>JS Form</title>
+</head>
+<body>
+    <header class="header">
+        <h1>JS Form</h1>
+    </header>
+    <main>
+        <form id="form" action="/register" method="POST">
+                <fieldset class="form__fieldset">
+                    <legend class="fieldset__legend">Registration Form</legend>
+                    <a class="fieldset__note fieldset__field">Note: terms with "*" are required while others are optional.</a>
+                
+                    <label class="fieldset__field" for="name">*Name:</label>
+                    <div class="fieldset__field field__alter">
+                        <input type="text" id="name" name="name" placeholder="Gavin Belson">
+                        <div class="field__name__error">
+                            you need to fill out the name field
+                        </div>
+                    </div>
+                    
+                
+                    <label class="fieldset__field" for="email">*Email:</label>
+                    <div class="fieldset__field field__alter">
+                        <input type="text" id="email" name="email" placeholder="gavin@hooli.com">
+                        <div class="field__email__error"></div>
+                    </div>
+
+                    <label class="fieldset__field" for="confirm_email">*Confirm Email:</label>
+                    <div class="fieldset__field field__alter">
+                        <input  type="text" id="confirm-email" name="confirm-email" placeholder="gavin@hooli.com">
+                        <div class="field__confirm-email__error"></div>
+                    </div>
+
+                    <label class="fieldset__field" for="tier">
+                        Tier:
+                    </label>
+                    <select class="fieldset__field" name="tier" id="tier">
+                        <option value="">Please select</option>
+                        <option value="1">Silver Tier</option>
+                        <option value="2">Gold Tier</option>
+                        <option value="3">Platinum Tier</option>
+                    </select>
+                
+                    <label class="fieldset__field" for="annoy_me">
+                        <input type="checkbox" id="wants-spam" name="wants-spam" checked>
+                        Do you want us to send you annoying emails?
+                    </label>
+                
+                
+                    <input class="fieldset__field" type="submit" id="submit" value="Register">
+                </fieldset>
+
+        </form>
+
+    </main>
+    <footer class="footer">
+        <b><i>
+            We are not care about your privacy, please check our <a style="color: red;" href="privacy.html">Privacy Policy</a>
+        </i></b>
+    </footer>
+</body>
+</html>
